@@ -1,0 +1,135 @@
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  nav {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    text-align: end;
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+  }
+  nav ul li {
+    padding-right: 30px;
+  }
+  .menu-bar {
+    visibility: visible;
+  }
+  .menu-bar:hover {
+    color: #df6666;
+  }
+  .menu-bar:hover + nav {
+    display: block;
+  }
+  .about{
+    text-align: center;
+  }
+  .footer-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .social{
+    margin-left: -4rem;
+  }
+  .contact-form{
+    width: 100%;
+  }
+  .contact-form input,textarea{
+    width: 100%;
+  }
+  .social .social-icons{
+    padding: 0 30px;
+}
+.slider-container {
+    width: 90%;
+    height: 500px;
+  }
+  .indegator-3 {
+    left: 62%;
+  }
+  .indegator-2 {
+    left: 42%;
+  }
+  .indegator-1 {
+    left: 22%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .box {
+    width: 100%;
+  }
+  .services-container img {
+    width: 100%;
+  }
+  .services-container {
+    width: 100%;
+  }
+  .slider-container {
+    width: 90%;
+    height: 500px;
+  }
+  .indegator-3 {
+    left: 62%;
+  }
+  .indegator-2 {
+    left: 42%;
+  }
+  .indegator-1 {
+    left: 22%;
+  }
+  .logo {
+    flex-direction: column;
+    padding: 0;
+  }
+  .logo h1 {
+    font-size: 16px;
+  }
+  nav {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    text-align: end;
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+  }
+  nav ul li {
+    padding-right: 30px;
+  }
+  .menu-bar {
+    visibility: visible;
+  }
+  .menu-bar:hover {
+    color: #df6666;
+  }
+  .menu-bar:hover + nav {
+    display: block;
+  }
+  .about{
+    text-align: center;
+  }
+  .footer-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .social{
+    margin-left: -4rem;
+  }
+  .contact-form{
+    width: 100%;
+  }
+  .contact-form input,textarea{
+    width: 100%;
+  }
+  .social .social-icons{
+    padding: 0 30px;
+}
+}

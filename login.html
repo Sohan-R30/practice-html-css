@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+        body{
+            background-color: #e7e2e2d9;
+        }
+        #login-section{
+            text-align: center;
+            padding: 50px;
+            margin: 10% 20%;
+            background-color: #9dd2f6e4;
+            box-shadow: 0px 8px 24px 0px rgba(140, 149, 159, 0.2);
+        }
+        #login-section h2{
+            font-size: 32px;
+            color: #4a4040;
+        }
+        #login-section p a{
+            font-size: 20px;
+            color: #e31e1e;
+            font-weight: bold;
+            text-decoration: none;
+            letter-spacing: 3px;
+        }
+        #login-section form{
+            margin: 0 auto;
+            text-align: center;
+        }
+        #login-section form input{
+            margin: 0 auto;
+            width: 60%;
+            display: block;
+            padding: 10px 20px;
+            margin-bottom: 15px ;
+            border:none;
+            border-radius: 5px;
+            outline: none;
+            box-shadow: 0px 8px 24px 0px rgba(140, 149, 159, 0.2);
+            background-color: #d0d5dd;
+        }
+        #login-section form button{
+            padding: 10px 90px;
+            margin-bottom: 15px ;
+            border:none;
+            border-radius: 8px;
+            background-color: #359fe5;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <section id="login-section">
+        <h2>Login Please</h2>
+        <form>
+            <input type="text" placeholder="username" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Conform Password" required>
+            <button>Login</button>
+        </form>
+        <p><a href="index.html">Without Login</a></p>
+    </section>
+</body>
+</html>

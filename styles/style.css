@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ /* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+/* root styles*/
+:root{
+    --primary-color: #3498db;
+    --secondary-color: #e80f0f
+}
+/* header section styles start  */
+header{
+    position: relative;
+    height: 100vh;
+}
+.banner{
+    height: 90vh;
+    background-color: #919068d9;
+    width: 90%;
+    margin: 50px auto;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.menu-bar{
+    position: absolute;
+    color: #7c7474;
+    font-size: 40px;
+    right: 10px;
+    visibility: hidden;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+.logo h1{
+    font-size: 26px;
+    color: #d87d6fe6;
+    padding-left: 14px;
+    font-weight: bold;
+}
+.logo .text-logo{
+    color: #df6666;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+nav ul li{
+    padding-right: 40px;
+}
+nav ul li a{
+    color: #3A6073;
+    padding-bottom: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s linear 0.5s ;
+}
+nav ul li a:hover{
+    border-bottom: 5px solid #a29898;
+}
+.login-user{
+    color: #3A6073;
+    font-size: 30px;
+    padding: 0;
+}
+/* header section styles End  */
+
+
+/* slider section styles start  */
+.slider-container{
+    position: relative;
+    height: 700px;
+    width: 90%;
+    margin: 150px auto;    
+    border-radius: 10px;
+    background-image: url("../images/linnette-elizabeth.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slider 5s step-start 1s infinite alternate;
+}
+@keyframes slider {
+    0%{
+        background-image: url("../images/linnette-elizabeth.jpg");
+    }
+    25%{
+        background-image: url("../images/bird.jpg");
+    }
+    50%{
+        background-image: url("../images/cat.jpg");
+    }
+    75%{
+        background-image: url("../images/dog.jpg");
+    }
+    100%{
+        background-image: url("../images/tony-litvyak.jpg");
+    }
+}
+.slider-img{
+    position: absolute;
+}
+.slider-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+i{
+    position: absolute;
+    font-size: 60px;
+    font-weight: lighter;
+    color: #fff;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: all 1s;
+}
+.left-btn{
+    top: 45%;
+}
+.right-btn{
+    right: 0;
+    top: 45%;
+}
+.right-btn:hover, .left-btn:hover{
+    color: var(--secondary-color);
+    font-size: 65px;
+}
+
+.indegator{
+    cursor: pointer;
+}
+
+.indegator-1{
+    position: absolute;
+    bottom: 6%;
+    left: 40%;
+    height: 6px;
+    width: 50px;
+    background-color: #d8c1c1;
+    transition: all 1s;
+}
+.indegator-1:hover{
+    height: 8px;
+    background-color: var(--secondary-color);
+}
+.indegator-2{
+    position: absolute;
+    bottom: 6%;
+    left: 46%;
+    height: 6px;
+    width: 50px;
+    background-color: #d8c1c1;
+    transition: all 1s;
+}
+.indegator-2:hover{
+    height: 8px;
+    background-color: var(--secondary-color);
+}
+.indegator-3{
+    position: absolute;
+    bottom: 6%;
+    left: 52%;
+    height: 6px;
+    width: 50px;
+    background-color: #d8c1c1;
+    transition: all 1s;
+}
+.indegator-3:hover{
+    background-color: var(--secondary-color);
+    height: 8px;
+}
+
+/* slider section styles end  */
+
+
+/*  special offert section style start */
+#special-offers{
+    /* height: 100vh; */
+    width: 90%;
+    margin:0  auto 50px;
+}
+.offers-container{
+    width: 90%;
+    overflow: hidden;
+    margin: 0  auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 100px 0;
+}
+.offers-heading{
+    font-size: 40px;
+    text-align: center;
+}
+.offers-container img{
+    width: 20rem;
+    border-radius: 20px;
+}
+.offers-container .pricing{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.offers{
+    width: 25rem;
+    padding: 40px;
+    border: 1px solid #e3dada;
+    border-radius: 10px;
+    box-shadow: 0px 8px 24px 0px rgba(140, 149, 159, 0.2);
+    transition: box-shadow 1s;
+}
+
+.offers:hover{
+    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
+}
+.offers a{
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+.offers a:hover{
+    background-color: #0a97f4;
+    box-shadow: 0px 8px 24px 0px rgba(140, 149, 159, 0.2);
+}
+.offers .course-description{
+    margin-bottom: 15px;
+}
+
+/*  special offert section style end */
+
+/* services section style strat  */
+.services-heading{
+    font-size: 40px;
+    text-align: center;
+}
+.services-container{
+    width: 90%;
+    overflow: hidden;
+    margin: 0  auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 100px 0;
+}
+.services-container img{
+    width: 20rem;
+    border-radius: 20px;
+}
+.services-container .pricing{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.box{
+    width: 25rem;
+    padding: 40px;
+    border: 1px solid #e3dada;
+    border-radius: 10px;
+    box-shadow: 0px 8px 24px 0px rgba(140, 149, 159, 0.2);
+    transition: box-shadow 1s;
+}
+
+.box:hover{
+    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
+}
+.box button{
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+.box button:hover{
+    background-color: #0a97f4;
+    box-shadow: 0px 8px 24px 0px rgba(140, 149, 159, 0.2);
+}
+.course-heading{
+    padding: 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.course-description{
+    padding: 10px 0;
+    color: #a29898;
+}
+.course-price{
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--secondary-color);
+}
+/* services section style end  */
+
+
+/* contact section style start  */
+
+#contact{
+    width: 90%;
+    margin: 0 auto 150px;
+}
+.contact-heading{
+    font-size: 40px;
+    text-align: center;
+}
+.contact-form{
+    width: 35rem;
+    padding: 50px;
+    margin: 50px auto;
+    background-color: #75c5fb;
+    box-shadow: 0px 8px 24px 0px rgba(140, 149, 159, 0.2);
+    border-radius: 6px;
+}
+form{
+   display: flex;
+   flex-direction: column;
+}
+.contact-form input,textarea{
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid #d2c7c7;
+    background-color: #9dd2f6e4;
+    box-shadow: 0px 8px 24px 0px rgba(140, 149, 159, 0.2);
+    border-radius: 6px;
+    outline: none;
+}
+.contact-form button{
+    margin: 15px 0;
+    padding: 15px 0;
+    font-size: 22px;
+    color: #fff;
+    background-color: #359fe5;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.contact-form button:hover{
+    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
+}
+/* contact section style end  */
+
+
+
+/* footer section style start  */
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    text-align: justify;
+    padding: 30px 0;
+    background-color: var(--primary-color);
+    color: #e3dada;
+    padding: 100px 0;
+}
+.copyright{
+    font-size: 20px;
+    background-color: #242323;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+}
+.footer-container i{
+    font-size: 30px;
+}
+.social p{
+    padding-left: 4rem;
+    padding-bottom: 20px;
+    font-size: 22px;
+}
+.social .social-icons{
+    display: flex; 
+    justify-content: space-around;
+}
+.about{
+    font-size: 20px;
+}
+.about a{
+    text-decoration: none;
+    color: #000;
+}
+.about a abbr{
+    text-decoration: none;
+    color: #e3dada;
+}
+.about-me{
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid;
+}
+.name{
+    padding-top: 20px;
+}
+.footer p a{
+    text-decoration: none;
+    color: #e3dada;
+    font-size: 20px;
+}
