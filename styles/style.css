@@ -22,9 +22,47 @@ header{
 }
 .banner{
     height: 90vh;
-    background-color: #919068d9;
     width: 90%;
     margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    
+}
+.banner-course-container{
+    position: relative;
+}
+.banner-left h3{
+    padding:100px;
+    font-size: 45px;
+    text-align: center;
+}
+.web-development{
+   position: relative;
+   z-index: 999;
+   background-color: #48c7e3;
+}
+.web-design{
+    position: absolute;
+    right:  120px;
+    top: -150px;
+    z-index: 500;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.fullstack-development{
+    position: absolute;
+    right: 120px;
+    top: 150px;
+    z-index: 510;
+    background-color: #34f5d2;
+    color: #fff;
+}
+.web-design .course-description, .fullstack-development .course-description, .web-development .course-description{
+    color: #fff;
 }
 .navbar{
     display: flex;
@@ -81,6 +119,7 @@ nav ul li a:hover{
     font-size: 30px;
     padding: 0;
 }
+
 /* header section styles End  */
 
 

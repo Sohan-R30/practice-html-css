@@ -43,8 +43,8 @@
     .social .social-icons{
         padding: 0 30px;
     }
-        .slider-container {
-            width: 90%;
+    .slider-container {
+        width: 90%;
         height: 500px;
     }
     .indegator-3 {
@@ -56,6 +56,18 @@
     .indegator-1 {
         left: 22%;
     }
+    .banner{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .slider-container{
+        margin-top: 450px;
+    }
+    .banner-left{
+        margin-bottom: 100px;
+    }
+    
 }
 
 @media only screen and (max-width: 480px) {
@@ -131,5 +143,20 @@
     }
     .social .social-icons{
         padding: 0 30px;
+    }
+    .banner{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .slider-container{
+        margin-top: 550px;
+    }
+    .banner-left{
+        margin-bottom: 100px;
+    }
+    .web-development{
+        width: 80%;
+        right: 100px;
     }
 }
