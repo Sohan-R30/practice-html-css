@@ -11,6 +11,10 @@
     --primary-color: #3498db;
     --secondary-color: #e80f0f
 }
+body{
+    max-width: 1980px;
+    margin: 0 auto;
+}
 /* header section styles start  */
 header{
     position: relative;
@@ -188,7 +192,6 @@ i{
 
 /*  special offert section style start */
 #special-offers{
-    /* height: 100vh; */
     width: 90%;
     margin:0  auto 50px;
 }
@@ -202,21 +205,6 @@ i{
     gap: 20px;
     padding: 100px 0;
 }
-.offers-heading{
-    font-size: 40px;
-    text-align: center;
-}
-.offers-container img{
-    width: 20rem;
-    border-radius: 20px;
-}
-.offers-container .pricing{
-    display: flex;
-    flex-wrap: wrap;
-    gap:20px;
-    align-items: center;
-    justify-content: space-between;
-}
 .offers{
     width: 25rem;
     padding: 40px;
@@ -225,10 +213,19 @@ i{
     box-shadow: 0px 8px 24px 0px rgba(140, 149, 159, 0.2);
     transition: box-shadow 1s;
 }
-
 .offers:hover{
     box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
 }
+
+.offers-heading{
+    font-size: 40px;
+    text-align: center;
+}
+.offers img{
+    width: 20rem;
+    border-radius: 20px;
+}
+
 .offers a{
     padding: 12px 15px;
     border: none;
@@ -247,6 +244,7 @@ i{
 }
 
 /*  special offert section style end */
+
 
 /* services section style strat  */
 .services-heading{
@@ -329,11 +327,11 @@ i{
     width: 35rem;
     padding: 50px;
     margin: 50px auto;
-    background-color: #75c5fb;
+    background-color: #638296;
     box-shadow: 0px 8px 24px 0px rgba(140, 149, 159, 0.2);
     border-radius: 6px;
 }
-form{
+.contact-form form{
    display: flex;
    flex-direction: column;
 }
@@ -346,6 +344,7 @@ form{
     border-radius: 6px;
     outline: none;
 }
+
 .contact-form button{
     margin: 15px 0;
     padding: 15px 0;
